@@ -10,6 +10,10 @@ nav button{
   color: white;
 }
 
+.slide{
+  height: 855px;
+}
+
 .first-slide{
   //display: flex;
   //justify-content: center;
@@ -20,10 +24,7 @@ nav button{
   align-items: center;
   text-align: right;
 
-
-  height: 855px;
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('~assets/images/bg_1.jpg');
-
 }
 
 .big-pizza-1 img{
