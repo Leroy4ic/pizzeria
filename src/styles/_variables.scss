@@ -3,3 +3,22 @@ $font-family: "Comic Sans MS";
 $background-color: rgb(29, 29, 29);
 $font-color: #ffffff;
 $page-width: 1890px;
+
+@mixin bigBtn(){
+  padding: 10px 20px;
+}
+
+@mixin yellowBtn(){
+  @include bigBtn();
+  background-color: #fccb4e;
+  border: none;
+  color: black;
+  //font-weight: lighter;
+}
+
+@mixin transparentBtn(){
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+

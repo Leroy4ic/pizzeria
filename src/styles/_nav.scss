@@ -1,35 +1,98 @@
 nav{
   display: grid;
-  grid-template-columns: 500px repeat(6, 80px);
-  height: 70px;
-}
-
-nav button{
-  background: none;
-  border: none;
-  color: white;
-}
-
-.slide{
-  height: 855px;
-}
-
-.first-slide{
-  //display: flex;
-  //justify-content: center;
-
-  display: grid;
-  grid-template-columns: 700px 550px;
   justify-content: center;
-  align-items: center;
-  text-align: right;
+  grid-template-columns: 700px repeat(6, 80px);
+  height: 70px;
 
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('~assets/images/bg_1.jpg');
+  button{
+    background: none;
+    border: none;
+    color: white;
+  }
 }
 
-.big-pizza-1 img{
-  width: 500px;
 
-  border: 2px solid green;
-  //height: 35%;
+header {
+  //position: relative;
+
+  .slide{
+    height: 855px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .slides{
+    display: none;
+  }
+
+  /* Fading animation */
+  .slide{
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  h2{
+    margin: 0px;
+    color: #fccb4e;
+    font-style: oblique;
+    font-weight: lighter;
+  }
+  h1{
+    margin-top: 5px;
+  }
+
+
+  .big-pizza img {
+    width: 500px;
+    //border: 2px solid green;
+  }
+
+
+
+  .first-slide{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('~assets/images/bg_1.jpg');
+    grid-template-columns: 700px 550px;
+    text-align: right;
+  }
+
+  .second-slide{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('~assets/images/bg_1.jpg');
+    grid-template-columns: 550px 700px;
+    text-align: left;
+  }
+
+  .third-slide{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('~assets/images/bg_3.jpg');
+    text-align: center;
+  }
+
+  .main-buttons{
+    margin-top: 50px;
+  }
+
+  .dots{
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+  }
 }
+
