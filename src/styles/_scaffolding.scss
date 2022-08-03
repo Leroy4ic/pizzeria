@@ -10,6 +10,15 @@ html {
 body {
   margin: auto;
   max-width: $page-width;
+  box-sizing: border-box;
+
+  p{
+    color: $gray-paragraph;
+  }
+}
+
+.page{
+  height: 860px;
 }
 
 button{
@@ -25,6 +34,12 @@ button{
 .bigBlackBtn{
   @include bigBtn();
   @include transparentBtn();
+}
+
+.smallBlackBtn{
+  @include transparentBtn();
+  padding: 5px 10px;
+  font-size: smaller;
 }
 
 //

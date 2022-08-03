@@ -1,8 +1,11 @@
-$font-size: x-large;
+$font-size: large;
 $font-family: "Comic Sans MS";
 $background-color: rgb(29, 29, 29);
 $font-color: #ffffff;
 $page-width: 1890px;
+$yellow: #fccb4e;
+$gray-paragraph: #7c7c7c;
+
 
 @mixin bigBtn(){
   padding: 10px 20px;
@@ -10,7 +13,7 @@ $page-width: 1890px;
 
 @mixin yellowBtn(){
   @include bigBtn();
-  background-color: #fccb4e;
+  background-color: $yellow;
   border: none;
   color: black;
   //font-weight: lighter;

@@ -27,6 +27,6 @@ function showSlides(n) {
     dots[slideIndex-1].classList.add("active");
 }
 
-document.querySelector(".dot1").addEventListener("click", currentSlide(1));
-document.querySelector(".dot2").addEventListener("click", currentSlide(2));
-document.querySelector(".dot3").addEventListener("click", currentSlide(3));
+document.querySelector(".dot1").addEventListener("click", () => currentSlide(1));
+document.querySelector(".dot2").addEventListener("click", () => currentSlide(2));
+document.querySelector(".dot3").addEventListener("click", () => currentSlide(3));

@@ -1,8 +1,14 @@
 nav{
+  position: fixed;
+  margin-top: -70px;
+  width: 100%;
+  background-color: #232323;
   display: grid;
   justify-content: center;
-  grid-template-columns: 700px repeat(6, 80px);
+  align-content: center;
+  grid-template-columns: 700px repeat(6, 90px);
   height: 70px;
+
 
   button{
     background: none;
@@ -13,14 +19,25 @@ nav{
 
 
 header {
-  //position: relative;
+  //border: 2px solid #0062ff;
+  margin-top: 70px;
+
 
   .slide{
-    height: 855px;
+    //border: 2px solid #73ff00;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('~assets/images/bg_1.jpg');
+
+    //height: 855px;
+    box-sizing: border-box;
+
     display: grid;
     justify-content: center;
     align-items: center;
     align-content: center;
+
+    p{
+      color: white;
+    }
   }
 
   .slides{
@@ -28,19 +45,19 @@ header {
   }
 
   /* Fading animation */
-  .slide{
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
+  //.slide{
+  //  animation-name: fade;
+  //  animation-duration: 0.7s;
+  //}
 
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+  //@keyframes fade {
+  //  from {opacity: 0.5}
+  //  to {opacity: 1}
+  //}
 
   h2{
-    margin: 0px;
-    color: #fccb4e;
+    margin: 0;
+    color: $yellow;
     font-style: oblique;
     font-weight: lighter;
   }
@@ -57,13 +74,12 @@ header {
 
 
   .first-slide{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('~assets/images/bg_1.jpg');
+    background-origin: border-box;
     grid-template-columns: 700px 550px;
     text-align: right;
   }
 
   .second-slide{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('~assets/images/bg_1.jpg');
     grid-template-columns: 550px 700px;
     text-align: left;
   }
@@ -78,12 +94,18 @@ header {
   }
 
   .dots{
+    margin-top: -70px;
+    margin-bottom: 45px;
+
+    //border: 2px solid red;
+
+
     /* The dots/bullets/indicators */
     .dot {
       cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
+      height: 22px;
+      width: 22px;
+      margin: 0 6px;
       background-color: #bbb;
       border-radius: 50%;
       display: inline-block;
@@ -91,7 +113,7 @@ header {
     }
 
     .active, .dot:hover {
-      background-color: #717171;
+      background-color: $yellow;
     }
   }
 }
