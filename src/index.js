@@ -1,23 +1,23 @@
 // Test import of a JavaScript module
-import { example } from '@/js/example'
+// import { example } from '@/js/example'
 
 
 
 // Test import of an asset
-// import webpackLogo from '@/images/webpack-logo.svg'
+import restaurant from '@/images/restaurant.png'
 
 // Test import of styles
 import 'styles/index.scss'
 
 import './js/mainSlide'
-
+import './js/changeDishCategory'
 
 // Appending to the DOM
 const logo = document.createElement('img')
-// logo.src = webpackLogo
+logo.src = restaurant
 
 const heading = document.createElement('h1')
-heading.textContent = example()
+// heading.textContent = example()
 
 // Test a background image url in CSS
 const imageBackground = document.createElement('div')

@@ -24,8 +24,13 @@
   text-align: left;
   padding-bottom: 50px;
 
+  img{
+    width: 90px;
+    border-radius: 45px;
+  }
+
   h3{
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   p{
@@ -38,10 +43,7 @@
   }
 }
 
-.menu-pricing img{
-  width: 90px;
-  border-radius: 45px;
-}
+
 
 
 
@@ -51,7 +53,7 @@
   display: grid;
   //grid-template-columns: repeat(6, 235px);
   //grid-template-rows: 235px 235px;
-  grid-template-columns: repeat(6, minmax(240px, 1fr));
+  grid-template-columns: repeat(6, minmax(254px, 1fr));
   //grid-template-rows: 3fr 3fr;
 
   .image{
@@ -84,9 +86,57 @@
     margin: 0 20px 30px 20px ;
   }
 
-  span{
-    color: $yellow;
-    margin-right: 20px;
+}
+
+
+//3 types of pizza page
+.three-types-of-pizza{
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  .big-img{
+    //width: 30%;
+    background-image: url("~assets/images/about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .three-types-of-dishes{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    align-items: center;
+
+    .dish-btns{
+      margin-top: 70px;
+      margin-left: 70px;
+      text-align: left;
+
+      button{
+        margin-right: 10px;
+      }
+    }
+
+    .dish-category{
+      display: none;
+    }
+
+    .three-types{
+      display: grid;
+      grid-template-columns: repeat(3, 360px);
+      //align-content: center;
+
+      .type{
+        margin-left: 30px;
+        margin-top: -50px;
+
+        img{
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+        }
+      }
+    }
   }
 
 
